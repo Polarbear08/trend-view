@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "browserify src/index.js dist/bundle.js"
+    "build": "browserify src/index.js -o dist/bundle.js"
   },
   "author": "polarbear08",
   "license": "MIT",
