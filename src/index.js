@@ -12,12 +12,14 @@ const table = new Tabulator("#ex-table", {
     height: 205,
     data: tabledata,
     layout: "fitColumns",
+    tooltips: true,
     columns: [
         { title: "Name", field: "name", width: 150 },
         { title: "Age", field: "age", align: "left", formatter: "progress" },
         { title: "Favourite Color", field: "col" },
         { title: "Date Of Birth", field: "dob", sorter: "date", align: "center" },
     ],
+    autoColumns: true,
     rowClick: function (e, row) {
         alert("Row" + row.getData().id + "Clicked!")
     }
